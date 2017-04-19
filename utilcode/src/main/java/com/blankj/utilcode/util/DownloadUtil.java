@@ -103,7 +103,7 @@ public class DownloadUtil {
                     if (filePath != null) {
                         if (filePath.contains(context.getPackageName())) {
                             if (filePath.endsWith("apk")) {
-                                AppUtils.installAPK(context, filePath.trim().substring(7));
+                                AppUtils.installApp(context, filePath.trim().substring(7));
                             } else {
                                 Toast.makeText(context, "下载完成", Toast.LENGTH_SHORT).show();
                             }
